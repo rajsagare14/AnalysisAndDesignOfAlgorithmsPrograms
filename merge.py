@@ -47,10 +47,6 @@ def mergeSort(array: list):
             j = j + 1
             k = k + 1
         print(array)
-
-
-            
-
 def printList(array: list):
     for i in range(len(array)):
         print(f"{array[i]} ")
