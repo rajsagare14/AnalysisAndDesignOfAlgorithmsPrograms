@@ -1,27 +1,3 @@
-def merge(leftSubArray : list, rightSubArray : list):
-    i=j=k=0
-    array = leftSubArray
-    array = array.extend(rightSubArray)
-    while(i < len(leftSubArray) and j < len(rightSubArray)):
-        if(leftSubArray[i] < rightSubArray[j]):
-            array[k] = leftSubArray[i]
-            i = i + 1
-        else:
-            array[k] = rightSubArray[j]
-            j = j + 1
-        k = k + 1
-
-    while i<len(leftSubArray):
-        array[k] = leftSubArray[i]
-        i = i + 1
-        k = k + 1
-    while j<len(rightSubArray):
-        array[k] = rightSubArray[j]
-        j = j + 1
-        k = k + 1
-    print(f"Merge = {array}")
-    return array
-
 def mergeSort(array: list):
     if(len(array)>1):
         i=j=k=0
