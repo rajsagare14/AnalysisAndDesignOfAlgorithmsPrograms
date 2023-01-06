@@ -29,5 +29,7 @@ def printList(array: list):
     print()
 if (__name__ == '__main__'):
     array = [55, 44, 66, 33, 77, 22, 88, 11, 99, 1]
+    # array.sort()
+    # print(array)
     sortedArray = mergeSort(array)
     print(sortedArray)
